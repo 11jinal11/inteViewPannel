@@ -227,7 +227,7 @@ const handleChange = (event) => {
   // console.log("Filtered Subcategories:", item.data.data);
   allSubCatUpdate(filteredSubcategories) // sub catagary mli gay => data patch kravana
 })
-.catch((err)=>{~
+.catch((err)=>{
   console.log(err);
   })
   }
