@@ -78,7 +78,7 @@ const InteviewPortal = ({ children }) => {
                     },
                   }}
                 >
-                  <ListItemIcon sx={{ color: isActive ? 'white' : '#0288d1' }}>
+                  <ListItemIcon sx={{ color: isActive ? 'white' : '#0288d1' }} onClick={logoutPanel}>
                     {item.icon}
                   </ListItemIcon>
                   <ListItemText primary={item.name} 
@@ -94,7 +94,10 @@ const InteviewPortal = ({ children }) => {
       <Divider />
     </div>
   );
-
+let logoutPanel = () => {
+    localStorage.removeItem("Token")
+    navigate("/")
+}
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
