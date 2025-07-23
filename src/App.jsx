@@ -14,13 +14,7 @@ import {
 function App() {
   return (
     <>
-      {/* <Adminpenal/> */}
-      {/* <InteviewPortal /> */}
-      {/* <DashBoard/> */}
-      {/* <Categary/> */}
-      {/* <SubCatagary/> */}
-      {/* <QandA/> */}
-      <Router>
+           <Router>
         <Switch>
         <Route path="/qa">
           <QandA></QandA>
